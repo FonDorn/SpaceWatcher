@@ -1,21 +1,20 @@
 import React from 'react';
 import {
   AppRegistry,
-  asset,
-  StyleSheet,
-  Pano,
-  Text,
-  View,
 } from 'react-vr';
 
+import App from './vr/Components/App';
+
 class SpaceWatcher extends React.Component {
+  constructor() {
+    super('');
+  }
+
   render() {
     return (
-      <View>
-        <Pano source={asset('space-bg.png')}/>
-      </View>
+      <App />
     );
   }
-};
+}
 
 AppRegistry.registerComponent('SpaceWatcher', () => SpaceWatcher);
